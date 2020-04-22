@@ -12,11 +12,19 @@
 
 //extern int fourxintab(int *vec, int tamv, int a, int b);
 //extern int CheckRange( int lim, int tam, int *seq);
+//extern unsigned int CountCommon(unsigned int N, int *seq_A , unsigned int M, int *seq_B);
+
+
+/*int main(void) {
+	puts("!!!Hello World!!!"); //prints !!!Hello World!!!
+	return EXIT_SUCCESS;
+}*/
 
 int main(void) {
 	printf("**********************************************************************************\n\n");
+	
 
-/**********************************************************************************************************/
+/***********************************************************************************************************************************************************************************************************************/
 /*	Trabalho 0
 
 	Determinar o numero de valores (X) de uma sequencia (vetor) de N elementos (N>=0)
@@ -32,8 +40,8 @@ int main(void) {
     printf("fourxintabresult = %d\n",fourxintabresult);
 	         // para este exemplo fourxintabresult = 4
 */
+/***********************************************************************************************************************************************************************************************************************/
 
-/***********************************************************************************************************/
 	/*	Trabalho 1
 
 		Escrever uma sub-rotina que, para um dado valor positivo (o limiar),
@@ -73,6 +81,46 @@ int main(void) {
 		//(podem verificar o seu conteudo durante a execucao em modo debug)
 */
 
+/***********************************************************************************************************************************************************************************************************************/
+		// Trabalho 2
+
+	// Escrever uma sub-rotina que aceita  duas sequencias seq_A e seq_B de N e M numeros
+	// inteiros (M, N >= 0), respetivamente. Os elementos da sequencia seq_B sao todos
+	// distintos. Os elementos das sequencias sao do tipo signed word. A sub-rotina
+	// determina quantos elementos de seq_A surgem em seq_B.
+	//O resultado e do tipo unsigned word.
+
+	//A sub-rotina deve ter o nome CountCommon e aceitar os seguintes argumentos pela ordem indicada:
+	//(1) valor de N (do tipo unsigned word);
+	//(2) endereco-base de seq_A;
+	//(2) valor de M (do tipo unsigned word);
+	//(3) endereco-base da sequencia seq_B.
+/*
+	unsigned int tamA= 8, tamB=3;
+	//unsigned int tamA = 8, tamB = 5;
+	//unsigned int tamA = 12, tamB = 3;
+	int vectA[] = {7, -8, -5, -2, -5, -2, 40, 7};
+	//int vectA[] = { 5, -8, -5, -2, -5, -2, 40, 5};
+	//int vectA[] = {5, 7, -2};
+	//int vectA[] = {287, -34, -4, -6, 2, 2, 2, 2, 2, 2, -2, 4};
+	//int vectA[] = {};
+	int vectB[] = {5, 7, -2};
+	//int vectB[] = {7, -8, -5, -2, 40};
+	//int vectB[] = {};
+	//int vectB[] = {1, 2, 3};
+	//int vectB[] = {5, 5, 6, 7};
+	//int vectB[] = {7, -8, -5, -2, -5, -2, 40, 7};
+	//int vectB[] = {287, -2, 2};
+
+	unsigned int res;
+
+	res = CountCommon(tamA, vectA, tamB, vectB);
+	printf("Numero de elementos de vectA[] em vectB[]: %u", res);
+*/
+	// para o exemplo fornecido, o numero de elementos indicado na mensagem e 4.
+
+/***********************************************************************************************************************************************************************************************************************/
+	
 
 	printf("\n\n**********************************************************************************");
 	return EXIT_SUCCESS;
