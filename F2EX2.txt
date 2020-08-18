@@ -1,0 +1,8 @@
+Ficha 2 - Instruções básicas AArch64
+
+2-
+
+a) #0C90h
+b) Nenhum porque ao fazer "EOR W12, W12, W12", W12 = 0
+c) Valores maiores que #0100h, tratando-se de dados unsigned
+d) Valores maiores que #0100h, tratando-se de dados signed

@@ -1,0 +1,91 @@
+Questões-tipo Exame:
+
+Ex 13 -
+
+a)
+"MSUB W5, W4, W2, W1" faz a seguinte operação aritmética:
+W5 = W1 - (W4 * W2). Assim, a operação pode ser dividida pela
+multiplicação, seguida pela subtração, fazendo inicialmente
+W5 = W4 * W2 e, seguidamente, W5 = W1 - W5, o que, em código AArch64,
+se traduz em: 	"MUL W5, W4, W2
+				 SUB W5, W1, W5"
+
+
+
+b)
+W5 é o dígito menos significativo de W1
+
+
+c)
+É executada 4 vezes
+
+
+d)
+"r= -4"
+
+
+
+
+# include <stdio.h>
+extern int sd (unsigned int num);
+int main (void)
+{
+	unsigned int 	n=2345 , m=567;
+	int 			r = sd (n) - sd (m);
+	printf ("r = %d\n", r);
+	return 0;
+}
+
+Ficheiro sd.s
+
+ 1 		.text
+ 2 		.global sd
+ 3 		.type sd, %function
+ 4
+ 5 		sd : 	mov W1, W0					// W1 = W0
+ 6 				mov W0, 0					// W0 = 0
+ 7 				mov W2, 10					// W2 = 10
+ 8 		L2 : 	cbz W1, L1					// se W1=0 -> L1
+ 9 				udiv W4, W1, W2				// W4 = W1/W2
+ 10 			msub W5, W4, W2, W1			// W5 = W1 - (W4 * W2)
+ 11 			add W0, W0, W5				// W0 = W0 + W5
+ 12 			mov W1, W4					// W1 = W4
+ 13 			b L2						// -> L2
+ 14 	L1 : 	ret
+ 
+ 
+ O que a rotina faz para sd(n):
+ 
+ W1 = 2345
+ W0 = 0
+ W2 = 10
+ W1 != 0
+ W4 = 2345/10 = 234
+ W5 = 2345 - (234*10) = 5
+ W0 = 0 + 5 = 5
+ W1 = 234
+ -> L2 _____________________________
+ W1 != 0
+ W4 = 234/10 = 23
+ W5 = 234 - (23*10) = 4
+ W0 = 5 + 4 = 9
+ W1 = 23
+ -> L2 _____________________________
+ W1 != 0
+ W4 = 23/10 = 2
+ W5 = 23 - (2*10) = 3
+ W0 = 9 + 3 = 12
+ W1 = 2
+ -> L2 _____________________________
+ W1 != 0
+ W4 = 2/10 = 0
+ W5 = 2 - (0*10) = 2
+ W0 = 12 + 2 = 14
+ W1 = 0
+ -> L2 _____________________________
+ W1 = 0
+ -> L1
+ RET W0 = 14
+ 
+ 
+ Basicamente soma todos os algarismos pertencentes ao número (2+3+4+5 = 14)
