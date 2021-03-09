@@ -1,10 +1,7 @@
 /*
  ============================================================================
  Name        : Projeto1.c
- Author      : 
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Author      : Sofia Teixeira
  ============================================================================
  */
 
@@ -48,7 +45,7 @@
 //extern void questionario2(float *P, float *Q);
 
 
-// Questões-tipo Exame:
+// Questï¿½es-tipo Exame:
 //extern long int menorX(long int *P, int n);
 //extern long int maiorY(long int *P, int n);
 //extern int PONTO(long int *P, int n);
@@ -64,20 +61,20 @@
 int main(void)
 {
 	printf("**********************************************************************************\n\n");
-	//Programa inicial - de instalação
+	//Programa inicial - de instalaï¿½ï¿½o
 
 	/*int a = 5;
 	int b = 10;
 	int ca = 0;
 	ca = SOMA(a, b);
-	printf("A soma é %d\n", ca);*/
+	printf("A soma ï¿½ %d\n", ca);*/
 
 /***********************************************************************************************************************************************************************************************************************/
 	//Ficha2_Ex_1.a)
 /*
 	int a = 23;
 	int res = F2EX1A(a);
-	printf("Decrementar de uma unidade o valor da posição de memória endereçada por X10, com valor inicial %d - %d", a, res);
+	printf("Decrementar de uma unidade o valor da posiï¿½ï¿½o de memï¿½ria endereï¿½ada por X10, com valor inicial %d - %d", a, res);
 */
 /***********************************************************************************************************************************************************************************************************************/
 	//Ficha2_Ex_1.b)
@@ -92,7 +89,7 @@ int main(void)
 	//signed int a = 23;
 	signed int a = -3;
 	int res = F2EX1C(a);
-	printf("Substituir o conteúdo de X15(%d) pelo seu valor absoluto -> %d", a, res);
+	printf("Substituir o conteï¿½do de X15(%d) pelo seu valor absoluto -> %d", a, res);
 */
 /***********************************************************************************************************************************************************************************************************************/
 	//Ficha3_Ex_1.a)
@@ -101,7 +98,7 @@ int main(void)
 	int b=5;
 	int res=10;
 	res=SOMA_V(a,b);
-	printf("A soma é: %d",res);*/
+	printf("A soma ï¿½: %d",res);*/
 
 /***********************************************************************************************************************************************************************************************************************/
 	//Ficha3_Ex_2
@@ -111,7 +108,7 @@ int main(void)
 	//printf("teste\n");
 	int resex3b;
 	resex3b=f3ex3b(frase,caracter);
-	printf("há %d caracacteres", resex3b);*/
+	printf("hï¿½ %d caracacteres", resex3b);*/
 
 /***********************************************************************************************************************************************************************************************************************/
 	//Ficha3_Ex_4.b)
@@ -133,17 +130,12 @@ int main(void)
 	/*long int testn = 1024;
 	int res6;
 	res6 = POSlmsb(testn);
-	printf ("A posição do primeiro 1 é %d\n", );
+	printf ("A posiï¿½ï¿½o do primeiro 1 ï¿½ %d\n", );
 */
 /***********************************************************************************************************************************************************************************************************************/
 /*	Trabalho 0
 
-	Determinar o número de valores (X) de uma sequência (vetor) de N elementos (N>=0)
-	em que 4 * X pertence ao intervalo [a; b]. Considerar que os valores são do tipo unsigned word.
-	EX: Assumindo V= [ 40, 5, 3, 12, 13, 21] e [a; b]=[13 84] a resposta é 4.
-	Podem usar o seguinte código C para invocar e testar a vossa função:*/
-
-   /* int vecint[]= {40, 5, 3, 12, 13, 21};
+    int vecint[]= {40, 5, 3, 12, 13, 21};
     int tamvec = 6;
     int inflim2 = 13;
     int suplim2 = 84;
@@ -161,7 +153,7 @@ int main(void)
 	int v2dimF3EX7D[] = {3, 1, 4, 0, 1};
 	int resF3EX7D;
 	resF3EX7D = F3EX7D (v1dimF3EX7D, v2dimF3EX7D, dimF3EX7D);
-	printf ("O produto interno é = %d\n", resF3EX7D);
+	printf ("O produto interno ï¿½ = %d\n", resF3EX7D);
 */
 /***********************************************************************************************************************************************************************************************************************/
 	//Ex.7-e
@@ -179,27 +171,13 @@ int main(void)
 		int v2dimF3EX7E[] = {1527, -15, 56654, 5486, 1};
 		int resF3EX7E;
 		resF3EX7E = F3EX7E (v1dimF3EX7E, v2dimF3EX7E, dimF3EX7E);
-		printf ("O produto interno é = %d\n", resF3EX7E);
+		printf ("O produto interno ï¿½ = %d\n", resF3EX7E);
 
 */
 
 /***********************************************************************************************************************************************************************************************************************/
 	/*	Trabalho 1
-
-		Escrever uma sub-rotina que, para um dado valor positivo (o limiar),
-		substitui os elementos de uma sequência que não pertencem ao intervalo
-		[-limiar;+limiar] pelo valor do extremo do intervalo mais próximo desses
-		elementos e devolve o número de elementos modificados. Os elementos da
-		sequência são do tipo signed word.
-
-		A sub-rotina deve ter o nome CheckRange e aceitar os seguintes argumentos pela ordem indicada:
-		(1) valor limiar (do tipo unsigned word);
-		(2) número de elementos da sequência (do tipo unsigned word);
-		(3) endereço-base da sequência.
-
-		Para efeitos de teste podem utilizar o seguinte código:
-*/
-	/*	int limiar = 20;
+		int limiar = 20;
 		//int limiar = 0;
 		int tamanho = 8;
 		//int tamanho = 6;
@@ -219,25 +197,12 @@ int main(void)
 				printf("%d; ", ve[i]);
 			}
 		// para o exemplo fornecido o output deve indicar que foram alterados 3 elementos
-		// no final da execuçao a sequencia ve[] = {7, -8, -20, 20, 20, -10, 0, 20}
-		//(podem verificar o seu conteúdo durante a execução em modo debug)
+		// no final da execuï¿½ao a sequencia ve[] = {7, -8, -20, 20, 20, -10, 0, 20}
 */
 
 /***********************************************************************************************************************************************************************************************************************/
-			// Trabalho 2
+	/* 	Trabalho 2
 
-	// Escrever uma sub-rotina que aceita  duas sequências seq_A e seq_B de N e M números
-	// inteiros (M, N >= 0), respetivamente. Os elementos da sequência seq_B são todos
-	// distintos. Os elementos das sequências são do tipo signed word. A sub-rotina
-	// determina quantos elementos de seq_A surgem em seq_B.
-	//O resultado é do tipo unsigned word.
-
-	//A sub-rotina deve ter o nome CountCommon e aceitar os seguintes argumentos pela ordem indicada:
-	//(1) valor de N (do tipo unsigned word);
-	//(2) endereço-base de seq_A;
-	//(2) valor de M (do tipo unsigned word);
-	//(3) endereço-base da sequência seq_B.
-/*
 	unsigned int tamA= 8, tamB=3;
 	//unsigned int tamA = 8, tamB = 5;
 	//unsigned int tamA = 12, tamB = 3;
@@ -257,9 +222,9 @@ int main(void)
 	unsigned int res;
 
 	res = CountCommon(tamA, vectA, tamB, vectB);
-	printf("Número de elementos de vectA[] em vectB[]: %u", res);
+	printf("Nï¿½mero de elementos de vectA[] em vectB[]: %u", res);
 */
-	// para o exemplo fornecido, o número de elementos indicado na mensagem é 4.
+	// para o exemplo fornecido, o nï¿½mero de elementos indicado na mensagem ï¿½ 4.
 
 /***********************************************************************************************************************************************************************************************************************/
 		// Ficha 4 - Ex.3
@@ -285,43 +250,9 @@ int main(void)
 	}*/
 
 /***********************************************************************************************************************************************************************************************************************/
-		// Trabalho3
+		/* Trabalho3
 
-	/*Pretende-se implementar uma sub-rotina que aceita três sequências,
-	 seq_A, seq_B e seq_OP, com igual número (N) de elementos. As sequências
-	 seq_A e seq_B são compostas por N elementos inteiros enquanto que
-	 seq_OP é um vetor de carateres que define operações. Para cada elemento
-	 i (0 <= i < N) das sequências, seq_OP[i] define a operação a realizar
-	 entre seq_A[i] e seq_B[i]. As operações a realizar são a adição ('+'),
-	 subtração ('-'), multiplicação ('*') e potência AB ('P'), com deteção
-	 de overflow. Para a operação de potência, assumir que o valor de B é
-	 maior ou igual a 0. Enquanto não ocorrer overflow, o resultado de cada
-	 operação deve ser armazenado na posição correspondentes de seq_A. Caso
-	 ocorra overflow, a sub-rotina deve terminar sem processar mais operações
-	 e retornar o número de ordem (entre 1 e N) da operação em que ocorre
-	 overflow. A sub-rotina deve devolver o valor inteiro 0 no caso de ter
-	 realizado todas as operações sem ocorrência de overflow.
-
-	Notas importantes:
-	.As operações de adição, subtração e multiplicação devem ser feitas nesta sub-rotina.
-	.Para realizar a operação de potência deve invocar, com os devidos cuidados relativos
-	ao uso de registos, a sub-rotina a seguir declarada:
-	.extern int power(int base, int exp)
-	.Esta sub-rotina calcula o valor da potência e verifica a ocorrência de overflow.
-	Caso ocorra overflow a sub-rotina retorna o valor 0; caso não ocorra overflow
-	devolve o valor da potência (é sempre diferente de 0).
-
-	A sub-rotina a implementar deve ter o nome Calculator e aceitar os seguintes
-	argumentos pela ordem indicada:
-	(1) unsigned int N;
-	(2) endereço base de seq_OP;
-	(3) endereço base de seq_B;
-	(4) endereço base de seq_A.
-
-	Para efeitos de teste, podem utilizar o seguinte código:
-	*/
-
-	/*unsigned int size =6;
+	unsigned int size =6;
 	int vectA[] = {13, 2, 8, 4, 5, 25};
 	//int vectB[] = {9, 2, 3, 0, 1, -25}; // com overflow : exemplo (a)
 	int vectB[] = {1, 2, 3, 0, 1, -25}; // sem overflow  : exemplo (b);
@@ -330,7 +261,7 @@ int main(void)
 	int execucao = Calculator(size, vectOP, vectB, vectA);
 	int i;
 	if (execucao){
-	    printf("Overflow na operação %d\n", execucao);
+	    printf("Overflow na operaï¿½ï¿½o %d\n", execucao);
 	    for (i = 1; i < execucao; i++)
 	        printf("elemento %d resultado = %d\n", i, vectA[i-1]);}
 	else
@@ -338,17 +269,6 @@ int main(void)
 	        printf("elemento %d resultado = %d\n", i , vectA[i-1]);
 	 return EXIT_SUCCESS;
 */
-	/*Exemplos:
-	(a) Para vectB[] = {9, 2, 3, 0, 1, -25} e vectA[] = {13, 2, 8, 4, 5, 25}, tem-se execucao = 1;
-	// Ocorreu overflow na 1ª operação - nenhum valor de vectA[] é alterado.
-
-	(b) Para vectB[] = {1, 2, 3, 0, 1, -25} e vectA[] = {13, 2, 8, 4, 5, 25}, deve-se obter execucao = 0;
-	// Não ocorre overflow; executa todas as operações. No final, vectA[] = {13, 4, 512, 0, 4, 0}.
-
-	Obs:
-	Para efeitos de teste, precisam de desenvolver uma sub-rotina para cálculo da potência, em conformidade com a especificação dada anteriormente. No entanto, esta sub-rotina não deverá ser submetida.
-	A única sub-rotina a submeter (Calculator) deve ser colocada num ficheiro designado "calculator_upXXXXXXXXX_1MIEIC0x.s", em que "XXXXXXXXX" é o código do estudante e "x" é o número da turma.
-	*/
 
 /***********************************************************************************************************************************************************************************************************************/
 			//Ficha 5 - Ex. 1 - a)
@@ -359,10 +279,10 @@ int main(void)
 	double N = 7.1;
 	double P = F5EX1A(B, M, N);
 	if (P >= 0)
-		printf("O resultado é pos -  %g\n", solution);
+		printf("O resultado ï¿½ pos -  %g\n", solution);
 	else
-		printf("O resultado é neg -  %g\n", solution);
-	//printf("O resultado é %g\n", P);
+		printf("O resultado ï¿½ neg -  %g\n", solution);
+	//printf("O resultado ï¿½ %g\n", P);
 */
 /***********************************************************************************************************************************************************************************************************************/
 			//Ficha 5 - Ex. 1 - b)
@@ -372,16 +292,16 @@ int main(void)
 	double X = 7.1;
 	double Y = F5EX1B(X, W);
 	if (Y >= 0)
-		printf("O resultado é pos -  %g\n", solution);
+		printf("O resultado ï¿½ pos -  %g\n", solution);
 	else
-		printf("O resultado é neg -  %g\n", solution);
-	//printf("O resultado é %g\n", Y);
+		printf("O resultado ï¿½ neg -  %g\n", solution);
+	//printf("O resultado ï¿½ %g\n", Y);
 */
 
 /***********************************************************************************************************************************************************************************************************************/
 			//Ficha 5 - Ex. 2 - a)
-	// Escrever um programa para calcular o valor da expressão
-	// ((A-B)*C)/(D+A-3), assumindo valores com precisão simples.
+	// Escrever um programa para calcular o valor da expressï¿½o
+	// ((A-B)*C)/(D+A-3), assumindo valores com precisï¿½o simples.
 /*	float a = 10.0;
 	//float a = -10.0;
 	float b = 5.0;
@@ -390,30 +310,30 @@ int main(void)
 	float d = 3.0;
 	float solution = F5EX2A(a, b, c, d);
 	if (solution >= 0)
-		printf("O resultado é pos -  %g\n", solution);
+		printf("O resultado ï¿½ pos -  %g\n", solution);
 	else
-		printf("O resultado é neg -  %g\n", solution);
-	//printf("O resultado é %f\n", solution);
+		printf("O resultado ï¿½ neg -  %g\n", solution);
+	//printf("O resultado ï¿½ %f\n", solution);
 */
 /***********************************************************************************************************************************************************************************************************************/
 			//Ficha 5 - Ex. 2 - b)
-	// Escrever um programa para calcular o valor da área de um
-	// círculo dado o respetivo raio (considerar pi = 3,141 592 653).
+	// Escrever um programa para calcular o valor da ï¿½rea de um
+	// cï¿½rculo dado o respetivo raio (considerar pi = 3,141 592 653).
 	//double r = 10.0;
 /*	double r = -10.0;
 	//double r = 5.0;
 	double solution = F5EX2B(r);
 	if (solution >= 0)
-		printf("O resultado é pos -  %g\n", solution);
+		printf("O resultado ï¿½ pos -  %g\n", solution);
 	else
-		printf("O resultado é neg -  %g\n", solution);
+		printf("O resultado ï¿½ neg -  %g\n", solution);
 */
 /***********************************************************************************************************************************************************************************************************************/
 			//Ficha 5 - Ex. 5
-	// Sejam X e Y dois vetores de n números reais (n > 0). O seu
-	// produto interno é dado por:
+	// Sejam X e Y dois vetores de n nï¿½meros reais (n > 0). O seu
+	// produto interno ï¿½ dado por:
 	// X . Y = x1*y1 + x2*y2 + ... + xn*yn
-	// Apresentar o código da sub-rotina que calcula o produto interno
+	// Apresentar o cï¿½digo da sub-rotina que calcula o produto interno
 	// de X e Y.
 /*
 	float x[] = {-1.0, 2.1, 2.0};
@@ -421,88 +341,51 @@ int main(void)
 	int n = 3;
 	double solution = F5EX5(x, y, n);
 	if (solution >= 0)
-		printf("O resultado é pos -  %g\n", solution);
+		printf("O resultado ï¿½ pos -  %g\n", solution);
 	else
-		printf("O resultado é neg -  %g\n", solution);
-	//printf("O resultado é %g\n", solution);
+		printf("O resultado ï¿½ neg -  %g\n", solution);
+	//printf("O resultado ï¿½ %g\n", solution);
 */
 /***********************************************************************************************************************************************************************************************************************/
 			//Ficha 5 - Ex 6
 	/*Considerar um vetor V com n valores do tipo float. Escrever uma
-	sub-rotina que determina o número de valores do vetor que pertencem
-	ao intervalo [a; b]. Assumir que para executar esta subrotina é
-	chamada a função em C com o seguinte protótipo:*/
+	sub-rotina que determina o nï¿½mero de valores do vetor que pertencem
+	ao intervalo [a; b]. Assumir que para executar esta subrotina ï¿½
+	chamada a funï¿½ï¿½o em C com o seguinte protï¿½tipo:*/
 
-	//FAZER CÓDIGO PARA TESTAR
+	//FAZER Cï¿½DIGO PARA TESTAR
 
 /***********************************************************************************************************************************************************************************************************************/
 			//Ficha 5 - Ex 9. a)
 
 	/*	Pretende-se implementar um programa que produza uma tabela de
-	 valores da função y = 100 + 50 cos(x) com x pertencente a [0; 90]
+	 valores da funï¿½ï¿½o y = 100 + 50 cos(x) com x pertencente a [0; 90]
 	 (x em graus). Para isso, procede-se da seguinte maneira:
 
 	a) Escrever a sub-rotina cosseno que calcula o cosseno de um valor
-	real expresso em radianos (assumir a declaração
-	double cosseno(double x)), usando a seguinte variante da fórmula
+	real expresso em radianos (assumir a declaraï¿½ï¿½o
+	double cosseno(double x)), usando a seguinte variante da fï¿½rmula
 	de Taylor
-	Sugestão: Declarar um vetor com as constantes (n!) pré-calculadas.
+	Sugestï¿½o: Declarar um vetor com as constantes (n!) prï¿½-calculadas.
 */
 	/*
-	double x = 0;				//0º   - 1
-	//double x = 1.570796326797;	//90º  - 0
-	//double x = 0.5236;			//30º  - 0.866025404
-	//double x = 1.047197551198;	//60º  - 0.5
-	//double x = 0.7854;			//45º  - 0.707106781
+	double x = 0;				//0ï¿½   - 1
+	//double x = 1.570796326797;	//90ï¿½  - 0
+	//double x = 0.5236;			//30ï¿½  - 0.866025404
+	//double x = 1.047197551198;	//60ï¿½  - 0.5
+	//double x = 0.7854;			//45ï¿½  - 0.707106781
 	double result = cosseno(x);
 	if (result >= 0)
-		printf("O resultado é pos -  %g\n", result);
+		printf("O resultado ï¿½ pos -  %g\n", result);
 	else
-		printf("O resultado é neg -  %g\n", result);
+		printf("O resultado ï¿½ neg -  %g\n", result);
 */
-	// está mal - VER MELHOR A SUBROTINA
+	// estï¿½ mal - VER MELHOR A SUBROTINA
 
 
 /***********************************************************************************************************************************************************************************************************************/
-			//Trabalho4
+			/*Trabalho4
 
-	/*Escreva uma sub-rotina que aceita 3 sequências:
-	- seq_P com 2*N valores em vírgula flutuante de precisão simples
-	(N >= 0)
-	- seq_C com 2*M valores em vírgula flutuante de precisão dupla
-	(M > 0)
-	- seq_Out com N valores inteiros
-
-	As sequências seq_P e seq_C representam sequências de pontos num
-	espaço bidimensional (exemplo: seq_P = {Px0, Py0, Px1, Py1, Px2,
-	Py2, ...} ).
-	A sub-rotina deve determinar para cada um dos pontos da sequência
-	seq_P, qual dos pontos da sequência seq_C é que se encontra mais
-	próximo.
-	O índice (0 a M-1) do ponto da seq_C mais próximo de um ponto
-	P_i (i entre 0 e N-1, inclusivé) deve ser guardado na sequência
-	seq_Out na posição i.
-	O cálculo da distância entre dois pontos deve ser realizado
-	usando a seguinte expressão:
-
-	distancia = sqrt((x2-x1)^2+(y2-y1)^2)
-
-	No caso de dois ou mais pontos da sequência seq_C se encontrarem
-	à mesma distância de um ponto da sequência seq_P e essa distância
-	for a mínima, deve ser guardado o índice do ponto de seq_C com
-	índice menor.
-
-	A sub-rotina deve ser o nome eStep e aceitar os seguintes
-	argumentos pela ordem indicada:
-	(1) valor de N (do tipo unsigned word)
-	(2) endereço-base de seq_P
-	(3) valor de M (do tipo unsigned word)
-	(4) endereço-base de seq_C
-	(5) endereço-base de seq_Out
-
-	Para efeitos de teste podem utilizar o seguinte código:
-*/
-/*
 	unsigned int N = 5, M = 3;
 	float seq_P[] = {-3.1, 0, 2.5, -2, 3, 2, 0.5, 1, -5, -1};
 	double seq_C[] = {-2, -2, 0, 0, 2, 2};
@@ -520,35 +403,23 @@ int main(void)
 	//resposta = experiencias(N, seq_P, M, seq_C, seq_Out);
 
 	//printf("Resultado = %f", resposta);
-*/
-/*
+
+
 	for(int i = 0; i < N; i++){
-		printf("O ponto %d da seq_P (%f, %f) tem como ponto da seq_C mais próximo o ponto de índice %d (%f, %f)\n",
+		printf("O ponto %d da seq_P (%f, %f) tem como ponto da seq_C mais prï¿½ximo o ponto de ï¿½ndice %d (%f, %f)\n",
 				i, seq_P[i*2], seq_P[i*2 + 1], seq_Out[i], seq_C[seq_Out[i]*2], seq_C[seq_Out[i]*2 + 1]);
 	}
-*/
+
 
 	// 	medidas menores = {2.28254, 3.20156, 6.40312, 1.11803, 3.16228}
-/*
+
 	printf ("Seq_Out\n");
 
 	for (int k = 0; k < N; k++)
 	{
 		printf(" - %d", seq_Out[k]);
 	}
-
 */
-		// Neste exemplo a sequência seq_Out deveria passar a conter
-	//{0, 1, 2, 1, 0} após a execução da sub-rotina
-	/*
-	Obs:
-	Considerar que no cálculo da distância entre dois pontos não
-	ocorre overflow.
-	A sub-rotina deve ser colocada num ficheiro designado
-	"estep_upXXXXXXXXX_1MIEIC0x.s", em que "XXXXXXXXX" é o código do
-	estudante e "x" é o número da turma.
-	*/
-
 /***********************************************************************************************************************************************************************************************************************/
 			// Ficha 6 - Ex. 1 - a)
 /*
@@ -569,16 +440,16 @@ int main(void)
 		}
 	}
 */
-	/* CÓDIGO DO PROF
+	/* Cï¿½DIGO DO PROF
 
-	printf(“EX1 A)\n”);
+	printf(ï¿½EX1 A)\nï¿½);
 	float PFSIMDFEX1A[] = { 3.4, 5.3, -1.0, -2.1, 3.4, 5.3, -1.0, -2.1, 3.4, 5.3, -1.0, -2.1, 3.4, 5.3, -1.0, -2.1};
 	float QFSIMDFEX1A[] = { 1.4, 1.3, 1.0, 1.1, 1.4, 1.3, 1.0, 1.1, 1.4, 1.3, 1.0, 1.1, 1.4, 1.3, 1.0, 1.1};
 	float RFSIMDFEX1A[] = { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 	int NFSIMDFEX1A = 16;
 	somaVFSIMDFEX1A(PFSIMDFEX1A, QFSIMDFEX1A, RFSIMDFEX1A, NFSIMDFEX1A );
 	for(int i = 0; i < 16; i++) {
-		printf(“R[%d]= %f\n”,i, RFSIMDFEX1A[i]);
+		printf(ï¿½R[%d]= %f\nï¿½,i, RFSIMDFEX1A[i]);
 	}
 	 */
 
@@ -602,9 +473,9 @@ int main(void)
 	}
 	*/
 
-	/* CÓDIGO DO PROF
+	/* Cï¿½DIGO DO PROF
 
-	printf(“EX1 B)\n”);
+	printf(ï¿½EX1 B)\nï¿½);
 	float PFSIMDFEX1B[] = { 3.4, 5.3, -1.0, -2.1, 3.4, 5.3, -1.0, -2.1, 3.4, 5.3, -1.0, -2.1, 3.4, 5.3, -1.0, -2.1};
 	int NFSIMDFEX1B = 16;
 	float KFSIMDFEX1B = 2.0;
@@ -681,48 +552,8 @@ int main(void)
 */
 
 /***********************************************************************************************************************************************************************************************************************/
-			//Trabalho 5
-	/*
-	O objetivo deste trabalho é determinar a frequência relativa de um
-	conjunto de letras existentes num texto, utilizando instruções SIMD
-	sempre que as operações necessárias possam envolver vários dados em
-	paralelo.
+			/*Trabalho 5
 
-	Significado dos parâmetros:
-	- N:    número de carateres do texto
-	- text: endereço base da sequência de carateres que constitui o
-	texto
-	- nl:    número de letras a pesquisar
-	- lett: endereço base da sequência de letras a pesquisar
-	- freq: endereço base da sequência de frequências relativas das
-	letras
-
-	Para cada uma das 'nl' letras da sequência endereçada por 'lett'
-	pretende-se determinar a sua frequência relativa no texto e guardar
-	este resultado na posição correspondente da sequência endereçada por
-	'freq'. Sendo i (0 <= i < nl) a posição de uma letra a pesquisar, a
-	respetiva frequência relativa é guardada na posição i da sequência
-	de frequências.
-
-	A função retorna a letra a pesquisar que mais vezes ocorre no texto.
-	Caso existam duas ou mais letras nestas circunstâncias, considerar a
-	primeira encontrada. Se nenhuma das letras a pesquisar ocorrer no
-	texto ou se o número destas for 0, então a função deve retornar 0.
-
-	Considerar que:
-	- o número de carateres do texto é múltiplo de 16;
-	- nenhum dos carateres do texto nem da sequência de letras a
-	pesquisar possui acentos ou cedilha;
-	- a sequência de letras a pesquisar é composta por minúsculas;
-	- uma letra a pesquisar pode surgir no texto nas formas minúscula
-	ou maiúscula (a diferença entre os códigos ASCII de uma letra
-	minúscula e respetiva maiúscula é 32);
-	- a frequência relativa é expressa em percentagem.
-
-	Exemplo de utilização para efeitos de teste:
-
-*/
-/*
 	    unsigned int N = 48;
 	    char text[] = "A funcao retorna a frequencia absoluta da letra ";
 	    char nl = 4;
@@ -739,14 +570,14 @@ int main(void)
 	            printf("A letra '%c' ocorre em %s%% do texto.\n", lett[i], buf);
 	        }
 	    if (res)
-	        printf("Das letras pesquisadas no texto, '%c' é a mais frequente.\n", res);
+	        printf("Das letras pesquisadas no texto, '%c' ï¿½ a mais frequente.\n", res);
 */
-	        // Neste exemplo, 'freq' deverá conter {0, 18.8, 6.25, 8.33}
-//após a execução da sub-rotina
-	        // e 'a' é o carater mais frequente.
+	        // Neste exemplo, 'freq' deverï¿½ conter {0, 18.8, 6.25, 8.33}
+			//apï¿½s a execuï¿½ï¿½o da sub-rotina
+	        // e 'a' ï¿½ o carater mais frequente.
 
 /***********************************************************************************************************************************************************************************************************************/
-		// Questionário 2
+		// Questionï¿½rio 2
 /*
 	float primeiro_vetor[] = { 2, 2, 2, 2};
 	float segundo_vetor[] = { 1, 1, 1, 1 };
@@ -764,7 +595,7 @@ int main(void)
 	}
 */
 /***********************************************************************************************************************************************************************************************************************/
-		// QUESTÕES-TIPO EXAME
+		// QUESTï¿½ES-TIPO EXAME
 
 	//Ex7 - a)
 /*
@@ -793,7 +624,7 @@ int main(void)
 	unsigned char *txt = "Hoje vou para a FEUP n autocarro";
 	unsigned int n = 32;
 	unsigned int result = words(txt, n);
-	printf ("nº de palavras = %d\n", result);
+	printf ("nï¿½ de palavras = %d\n", result);
 */
 
 
@@ -815,7 +646,7 @@ int main(void)
 	//char genero = 'F';
 	char genero = 'M';
 	float result = pesoideal(peso, altura, genero);
-	printf("A diferença entre o peso atual e o peso ideal é: %f\n", result);
+	printf("A diferenï¿½a entre o peso atual e o peso ideal ï¿½: %f\n", result);
 */
 
 	//Ex11
@@ -826,9 +657,9 @@ int main(void)
 	int n = 4;
 	float result = Dmax(x, y, ptK, n);
 	if (result < 0)
-		printf("Distância máxima = NEG %f\n", result);
+		printf("Distï¿½ncia mï¿½xima = NEG %f\n", result);
 	else
-		printf("Distância máxima = POS %f\n", result);
+		printf("Distï¿½ncia mï¿½xima = POS %f\n", result);
 */
 	//Ex12
 
